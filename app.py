@@ -84,7 +84,9 @@ if __name__ == "__main__":
 
     # Infer model signature
     predictions = lr.predict(train_x)
-    signature = infer_signature(train_x, predictions)
+    signature = infer_signature(train_x, predictions)  
+
+    
 
     # Log mlflow attributes for mlflow UI
     mlflow.log_param("alpha", alpha)
